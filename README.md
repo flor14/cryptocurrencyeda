@@ -2,6 +2,12 @@
 
 A package to analyze historical cryptocurrency prices and performance
 
+## Function Included
+
+There are four functions that are included in this python package.
+
+
+
 ## Installation
 
 ```bash
