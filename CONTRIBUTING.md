@@ -10,8 +10,8 @@ you agree that we may redistribute your work under [our license](LICENSE.md).
 In exchange,
 we will address your issues and/or assess your change proposal as promptly as 
 we can, and help you become a member of our community.
-Everyone involved in [Software Carpentry][swc-site] and 
-[Data Carpentry][dc-site] agrees to abide by our 
+Everyone involved in our team and 
+users agrees to abide by our 
 [code of conduct](CODE_OF_CONDUCT.md).
 
 ## How to Contribute
