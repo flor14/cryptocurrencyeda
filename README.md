@@ -24,7 +24,7 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`CryptocurrencyEDA` was created by Berkay Bulut. It is licensed under the terms of the MIT license.
+`CryptocurrencyEDA` was created by MDS Students Group-11 for course 524. It is licensed under the terms of the MIT license.
 
 ## Credits
 
