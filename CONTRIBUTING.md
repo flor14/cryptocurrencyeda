@@ -3,6 +3,26 @@
 Contributions are welcome, and they are greatly appreciated! Every little bit
 helps, and credit will always be given.
 
+## Contributor Agreement
+
+By contributing,
+you agree that we may redistribute your work under [our license](LICENSE.md).
+In exchange,
+we will address your issues and/or assess your change proposal as promptly as 
+we can, and help you become a member of our community.
+Everyone involved in [Software Carpentry][swc-site] and 
+[Data Carpentry][dc-site] agrees to abide by our 
+[code of conduct](CODE_OF_CONDUCT.md).
+
+## How to Contribute
+
+The easiest way to get started is to file an issue
+to tell us about a spelling mistake,
+some awkward wording,
+or a factual error.
+This is a good way to introduce yourself
+and to meet some of our community members.
+
 ## Types of Contributions
 
 ### Report Bugs
