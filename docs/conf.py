@@ -6,7 +6,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u"CryptocurrencyEDA"
+project = u"cryptocurrencyeda"
 copyright = u"2022, Berkay Bulut"
 author = u"Berkay Bulut"
 

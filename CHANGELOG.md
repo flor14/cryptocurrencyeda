@@ -2,6 +2,6 @@
 
 <!--next-version-placeholder-->
 
-## v0.1.0 (11/01/2022)
+## v0.1.0 (12/01/2022)
 
-- First release of `CryptocurrencyEDA`!
+- First release of `cryptocurrencyeda`!

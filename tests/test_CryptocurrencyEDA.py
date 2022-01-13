@@ -1,1 +1,1 @@
-from CryptocurrencyEDA import CryptocurrencyEDA
+from cryptocurrencyeda import cryptocurrencyeda
