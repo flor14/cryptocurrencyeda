@@ -2,6 +2,10 @@
 
 A package to analyze historical cryptocurrency prices and performance
 
+There are existing Python libraries to access information of cryptocurrency such as [cryptocompare](https://github.com/lagerfeuer/cryptocompare) and [cryptofeed](https://github.com/bmoscon/cryptofeed). There are also existing Python libraries to visualize financial data such as [mplfinance](https://github.com/matplotlib/mplfinance).
+Therefore, here we want to build a simple and integrated Python library for accessing, analyzing, and visualizing cryptocurrency. 
+
+
 ## Function Included
 
 There are four functions that are included in this python package.
