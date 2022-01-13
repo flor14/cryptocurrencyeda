@@ -4,7 +4,11 @@ A package to analyze historical cryptocurrency prices and performance
 
 ## Function Included
 
-There are four functions that are included in this python package.
+The package contains the following four functions:
+- `data_retrive`: downloads data from a website, and returns a dataframe containing daily price  of a specific cryptocurrency within a time interval.
+- `plot_price`: generates and visualizes a plot of the price of the cryptocurrenty inputted over a period of time.
+- `growth_rate`: performs calculation of daily growth rate on historical cryptocurrency price time series data.
+- `avg_daily_return`: performs calculation of the average daily return of the inputted cryptocurrency price.
 ## Installation
 
 ```bash
