@@ -14,6 +14,6 @@ def avg_daily_return():
     
     Examples
     --------
-    >>>
-    >>>
+    >>> plot_price("BTCBitcoin")
+    >>> 0.1
     """
