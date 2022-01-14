@@ -6,8 +6,17 @@ This is a Python package to analyze historical cryptocurrency prices and perform
 There are existing Python libraries to access information of cryptocurrency such as [cryptocompare](https://github.com/lagerfeuer/cryptocompare) and [cryptofeed](https://github.com/bmoscon/cryptofeed). There are also existing Python libraries to visualize financial data such as [mplfinance](https://github.com/matplotlib/mplfinance).
 However, there is no integrated Python library for accessing, analyzing, and visualizing cryptocurrency data altogether. Therefore, we want to build a simple tool that can facilitate simple cryptocurrency data analysis all at once.
 
-## Function Included
+## Function List
 
+The package contains the following four functions:
+
+- `retrieve_historical_data`: downloads historical data from a cryptocurrency exchange using an an http request from a cryptocurrency exchange.
+
+- `plot_price`: generates and visualizes a plot of the price of the cryptocurrenty inputted over a period of time.
+
+- `growth_rate`: performs calculation of daily growth rate on historical cryptocurrency price time series data.
+
+- `avg_daily_return`: performs calculation of the average daily return of the inputted cryptocurrency price.
 ## Installation
 
 ```bash
