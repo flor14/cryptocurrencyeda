@@ -6,9 +6,17 @@ This is a Python package to analyze historical cryptocurrency prices and perform
 There are existing Python libraries to access information of cryptocurrency such as [cryptocompare](https://github.com/lagerfeuer/cryptocompare) and [cryptofeed](https://github.com/bmoscon/cryptofeed). There are also existing Python libraries to visualize financial data such as [mplfinance](https://github.com/matplotlib/mplfinance).
 However, there is no integrated Python library for accessing, analyzing, and visualizing cryptocurrency data altogether. Therefore, we want to build a simple tool that can facilitate simple cryptocurrency data analysis all at once.
 
-## Function Included
+## Function List
 
+The package contains the following four functions:
 
+- `retrieve_historical_data`: downloads historical data from a cryptocurrency exchange using an an http request from a cryptocurrency exchange.
+
+- `plot_price`: generates and visualizes a plot of the price of the cryptocurrenty inputted over a period of time.
+
+- `growth_rate`: performs calculation of daily growth rate on historical cryptocurrency price time series data.
+
+- `avg_daily_return`: performs calculation of the average daily return of the inputted cryptocurrency price.
 ## Installation
 
 ```bash
@@ -19,10 +27,14 @@ $ pip install cryptocurrencyeda
 
 - TODO
 
-## Contributing
+## Contributors
 
-Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+We welcome and recognize all contributions. You can see a list of current contributors in the [`contributors tab`](https://github.com/UBC-MDS/CryptocurrencyEDA/graphs/contributors). If you are interested in contributing to this project, please check out our CONDUCT.md 
 
+- Berkay Bulut
+- Cici Du
+- Alex Yinan Guo
+- Nobby Nguyen
 ## License
 
 `cryptocurrencyeda` was created by MDS Students from Group-11 for course 524. It is licensed under the terms of the MIT license.
