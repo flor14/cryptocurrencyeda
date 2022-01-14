@@ -27,10 +27,14 @@ $ pip install cryptocurrencyeda
 
 - TODO
 
-## Contributing
+## Contributors
 
-Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+We welcome and recognize all contributions. You can see a list of current contributors in the [`contributors tab`](https://github.com/UBC-MDS/CryptocurrencyEDA/graphs/contributors). If you are interested in contributing to this project, please check out our CONDUCT.md 
 
+- Berkay Bulut
+- Cici Du
+- Alex Yinan Guo
+- Nobby Nguyen
 ## License
 
 `cryptocurrencyeda` was created by MDS Students from Group-11 for course 524. It is licensed under the terms of the MIT license.
