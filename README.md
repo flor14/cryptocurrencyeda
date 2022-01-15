@@ -10,7 +10,7 @@ However, there is no integrated Python library for accessing, analyzing, and vis
 
 The package contains the following four functions:
 
-- `retrieve_historical_data`: downloads historical data from a cryptocurrency exchange using an an http request from a cryptocurrency exchange.
+- `retrieve_data`: downloads historical data from a cryptocurrency exchange using an an http request from a cryptocurrency exchange.
 
 - `plot_price`: generates and visualizes a plot of the price of the cryptocurrenty inputted over a period of time.
 
