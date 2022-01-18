@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import csv
 
 def daily_growth_rate(df, col_name):
@@ -30,11 +31,11 @@ def daily_growth_rate(df, col_name):
         raise TypeError("The input name of column must be of string type")
     
     # Test whether input col_name is of type numbers
-    if not isinstance(df[col_name].dtypes, float64):
+    if df[col_name].dtype != np.float64:
         raise TypeError("input col_name must be of float type")
     
         
-    
+    return  pd.DataFrame({"daily_growth_rate": df[col_name].pct_change()})
     
     
     
