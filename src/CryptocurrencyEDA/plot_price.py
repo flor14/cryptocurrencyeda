@@ -1,15 +1,11 @@
-def plot_price(price_df, name, window):
+def plot_price(df):
     """
     Plot the price of the cryptocurrenty inputted over window specified.
 
     Parameters
     ----------
-    price_df : pandas DataFrame
-        Data frame with time and price data.
-    name: str
-        Name of the cryptocurrency of interest.
-    window: list
-        List containing two date objects.
+    df : pandas DataFrame
+        Data frame with cryptocurrency name, date and close price.
 
     Returns
     -------
@@ -17,5 +13,21 @@ def plot_price(price_df, name, window):
         An altair plot object.
 
     Examples
-    >>> plot_price(price_df, "BTCBitcoin", [2021-01-01, 2021-12-31])
+    >>> df = retrieve_data(symbol:str="BTC-USDT",
+                  time_period:str="15min",
+                  start_date:str="2019-01-01",
+                  end_date:str="2019-02-01",
+                 )
+    >>> plot_price(df)
     """
+    name = df.Name[0]
+    chart = alt.Chart(df).mark_line().encode(
+        x=alt.X('Date', title = 'Date'),
+        y=alt.Y('Close', title = 'Close Price')
+    ).properties(title = symbol + ': close price over time'
+                ).configure_title(fontSize = 18,
+                                  anchor = 'start'
+                                 ).configure_axis(labelFontSize=10,
+                                                  titleFontSize=15
+                                                 )
+    return chart
