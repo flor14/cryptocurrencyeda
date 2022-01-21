@@ -20,4 +20,4 @@ def test_if_raise_error_with_wrong_input():
     test_input = 1.5
     with raises(ValueError, 
                        match="input must be list or pandas series"):
-        cryptocurrencyeda.avg_daily_return(test_input)
+        avg_daily_return(test_input)
