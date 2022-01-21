@@ -14,7 +14,7 @@ def retrieve_data(symbol:str="BTC-USDT",
     
     Parameters
     ----------
-    name : array-like
+    symbol : array-like
         Inputted cryptocurrency symbol.
     time_period : str
         Inputted time period.
