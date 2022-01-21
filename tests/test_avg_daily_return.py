@@ -9,7 +9,7 @@ output = avg_daily_return(df['Price'])
 
 def test_output_value():
     """A test to check if avg_daily_return outputs the correct value"""
-    assert output == 1
+    assert output == 0.75
 
 def test_output_type():
     """A test to check if the output of avg_daily_return is in correct type"""
@@ -18,6 +18,6 @@ def test_output_type():
 def test_if_raise_error_with_wrong_input():
     """A test to check if avg_daily_return raises error for the wrong input type"""
     test_input = 1.5
-    with pytest.raises(ValueError, 
+    with raises(ValueError, 
                        match="input must be list or pandas series"):
         cryptocurrencyeda.avg_daily_return(test_input)
