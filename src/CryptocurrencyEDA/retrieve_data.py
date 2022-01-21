@@ -14,7 +14,7 @@ def retrieve_data(symbol:str="BTC-USDT",
     
     Parameters
     ----------
-    symbol : array-like
+    name : array-like
         Inputted cryptocurrency symbol.
     time_period : str
         Inputted time period.
@@ -53,6 +53,8 @@ def retrieve_data(symbol:str="BTC-USDT",
     df = pd.DataFrame(data, columns=cols)
     df['Symbol'] = symbol
     df['Date'] = pd.to_datetime(df['Date'], unit='s')
+    
+    df['Close'] = df['Close'].astype(float)
     
     # Return the dataframe
     return df[['Symbol','Date','Close']]
