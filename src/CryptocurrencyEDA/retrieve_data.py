@@ -1,11 +1,12 @@
 import requests
 import json
 import pandas as pd
+import datetime
     
 def retrieve_data(symbol:str="BTC-USDT",
-                  time_period:str="15min",
-                  start_date:str="2019-01-01",
-                  end_date:str="2019-02-01",
+                  time_period:str="1day",
+                  start_date:str="2018-01-01",
+                  end_date:str="2022-01-10",
                  ):
     """
     Retrieves historical data from the KuCoin API.
@@ -19,9 +20,9 @@ def retrieve_data(symbol:str="BTC-USDT",
         Inputted time period.
         1min, 3min, 5min, 15min, 30min, 1hour,
         2hour, 4hour, 6hour, 8hour, 12hour, 1day, 1week
-    start_date : array-like
-        Inputted time frame.
-    end_date : array-like
+    start_date : string "%Y-%m-%d"
+        Inputted datetime. Minimum is 2018-01-01
+    end_date : string "%Y-%m-%d"
         Inputted time frame.
     
     Returns
@@ -29,9 +30,17 @@ def retrieve_data(symbol:str="BTC-USDT",
     pandas.DataFrame
         Historical data of the cryptocurrency.
     """
+    
+
+    date = datetime.datetime.strptime(start_date, "%Y-%m-%d")
+    start_date = int(datetime.datetime.timestamp(date))
+    
+    date = datetime.datetime.strptime(end_date, "%Y-%m-%d")
+    end_date = int(datetime.datetime.timestamp(date))
+    
+
     # Define the API URL
-   
-    urllink = "https://api.kucoin.com/api/v1/market/candles?type=15min&symbol=BTC-USDT&startAt=1420434000&endAt=1566789757"
+    urllink = f"https://api.kucoin.com/api/v1/market/candles?type={time_period}&symbol={symbol}&startAt={start_date}&endAt={end_date}"
     
     # Make the API call and convert the JSON response to a Python dictionary
     response = requests.get(urllink).json()
@@ -40,10 +49,10 @@ def retrieve_data(symbol:str="BTC-USDT",
     data = response["data"]
     
     # Create a pandas dataframe from the Python dictionary
-    cols = ["time", "open", "close", "high",  "low", "volume", "turnover"]
+    cols = ["Date", "Open", "Close", "High",  "Low", "Volume", "Turnover"]
     df = pd.DataFrame(data, columns=cols)
-    
-    df['time'] = pd.to_datetime(df['time'], unit='s')
+    df['Symbol'] = symbol
+    df['Date'] = pd.to_datetime(df['Date'], unit='s')
     
     # Return the dataframe
-    return df
+    return df[['Symbol','Date','Close']]
