@@ -14,7 +14,7 @@ def retrieve_data(symbol:str="BTC-USDT",
     
     Parameters
     ----------
-    symbol : array-like
+    name : array-like
         Inputted cryptocurrency symbol.
     time_period : str
         Inputted time period.
@@ -31,6 +31,8 @@ def retrieve_data(symbol:str="BTC-USDT",
         Historical data of the cryptocurrency.
     """
     
+    if not isinstance(symbol, str):
+        raise TypeError("The input symbol must be of string type")
 
     date = datetime.datetime.strptime(start_date, "%Y-%m-%d")
     start_date = int(datetime.datetime.timestamp(date))
@@ -45,6 +47,8 @@ def retrieve_data(symbol:str="BTC-USDT",
     # Make the API call and convert the JSON response to a Python dictionary
     response = requests.get(urllink).json()
     
+    assert type(response) == dict, "It is not a dictionary response"
+    
     # Convert the JSON response to a Python dictionary
     data = response["data"]
     
@@ -53,6 +57,14 @@ def retrieve_data(symbol:str="BTC-USDT",
     df = pd.DataFrame(data, columns=cols)
     df['Symbol'] = symbol
     df['Date'] = pd.to_datetime(df['Date'], unit='s')
+    
+    df['Close'] = df['Close'].astype(float)
+    
+    assert len(df) >= 1, "Empty dataframe"
+    
+    # Test whether output data is of pd.DataFrame type
+    if not isinstance(df, pd.DataFrame):
+        raise TypeError("The output dataframe must be of pd.DataFrame type")
     
     # Return the dataframe
     return df[['Symbol','Date','Close']]
