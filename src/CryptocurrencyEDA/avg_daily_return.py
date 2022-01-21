@@ -24,6 +24,6 @@ def avg_daily_return(prices):
             'input must be list or pandas series')
         
     return_sum = 0
-    for i in range(len(prices)-1):
-        return_sum += prices[i+1] - prices[i]
-    return return_sum / len(prices)
+    for i in range(1, len(prices)):
+        return_sum += prices[i] - prices[i-1]
+    return return_sum / (len(prices)-1)
