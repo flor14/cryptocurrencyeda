@@ -22,7 +22,7 @@ def test_dataframe_length():
     """
     Test dataframe length.
     """
-    test_data = retrieve_data(symbol="BTC-USDT", start_date="2020-01-09", end_date="2020-01-10")
+    test_data = retrieve_data(symbol="BTC-USDT", start_date="2020-01-01", end_date="2020-01-10")
     
     assert len(test_data) == 9
     
