@@ -1,4 +1,4 @@
-from cryptocurrencyeda.daily_growth_rate import retrieve_data
+from cryptocurrencyeda.retrieve_data import retrieve_data
 from pytest import raises
 
 import os

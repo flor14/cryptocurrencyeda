@@ -1,3 +1,8 @@
+import pandas as pd
+import numpy as np
+import altair as alt
+
+
 def plot_price(df):
     """
     Plot the price of the cryptocurrenty inputted over window specified.
