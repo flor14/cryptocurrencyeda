@@ -24,7 +24,7 @@ $ pip install cryptocurrencyeda
 ```
 
 ## Usage
-
+```Python
 from cryptocurrency.retrieve_data import retrieve_data
 from cryptocurrency.plot_price import plot_price
 from cryptocurrency.avg_daily_return import avg_daily_return
@@ -35,9 +35,13 @@ retrieve_data(symbol:str="BTC-USDT",
                   start_date:str="2018-01-01",
                   end_date:str="2022-01-10",
                  )
+
 plot_price(price_df)
+
 daily_growth_rate(price_df, closing_price)
+
 avg_daily_return(price_df)
+```
 
 ## Contributors
 
