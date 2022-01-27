@@ -32,11 +32,11 @@ jobs:
       run: poetry run pytest tests/
     # Step 7. Use Codecov to track coverage
     - name: Upload coverage to Codecov
-      - uses: actions/checkout@master
-      - uses: codecov/codecov-action@v2
+      uses: actions/checkout@master
+      uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-        fail_ci_if_error: true  # terminate workflow if there's an error
+          fail_ci_if_error: true  # terminate workflow if there's an error
     # Step 8. Build documentation
     # - name: Build documentation
     #   run: poetry run make html --directory docs/
