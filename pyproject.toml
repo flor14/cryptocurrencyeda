@@ -13,6 +13,9 @@ pandas = "^1.4.0"
 altair = "^4.2.0"
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+codecov = "^2.1.12"
 
 [tool.semantic_release]
 version_variable = "pyproject.toml:version" # version location
