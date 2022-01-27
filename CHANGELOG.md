@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.6 (2022-01-27)
+
+
 ## v0.2.5 (2022-01-27)
 ### Documentation
 * Update docs folder ([`09a0fdf`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/09a0fdfbd8bb3c9018609e8c2c0333c6c52f0f70))
