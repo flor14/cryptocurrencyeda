@@ -12,6 +12,7 @@ pytest = "^6.2.5"
 pandas = "^1.4.0"
 altair = "^4.2.0"
 Sphinx = "^4.4.0"
+sphinx-rtd-theme = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
