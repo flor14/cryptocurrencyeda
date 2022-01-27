@@ -9,7 +9,8 @@ output = avg_daily_return(df['Price'])
 
 def test_output_value():
     """A test to check if avg_daily_return outputs the correct value"""
-    assert output == 0.75
+    output = avg_daily_return(df['Price'])
+    assert output == 1
 
 def test_output_type():
     """A test to check if the output of avg_daily_return is in correct type"""

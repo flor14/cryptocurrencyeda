@@ -42,7 +42,7 @@ def plot_price(df):
     chart = alt.Chart(df).mark_line().encode(
         x=alt.X('Date', title = 'Date'),
         y=alt.Y('Close', title = 'Close Price')
-    ).properties(title = symbol + ': historical close price over time period'
+    ).properties(title = Symbol + ': historical close price over time period'
                 ).configure_title(fontSize = 18,
                                   anchor = 'start'
                                  ).configure_axis(labelFontSize=10,
