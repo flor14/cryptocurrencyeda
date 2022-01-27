@@ -24,7 +24,7 @@ jobs:
     # Step 5. Install our package
     - name: Install package
       run: |
-        pip install flake8 pytest requests poetry
+        pip install flake8 pytest requests poetry sphinx
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         poetry install
     # Step 6. Run tests for package
