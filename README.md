@@ -24,17 +24,34 @@ $ pip install cryptocurrencyeda
 ```
 
 ## Usage
+```Python
+from cryptocurrency.retrieve_data import retrieve_data
+from cryptocurrency.plot_price import plot_price
+from cryptocurrency.avg_daily_return import avg_daily_return
+from cryptocurrency.daily_growth_rate import daily_growth_rate
 
-- TODO
+retrieve_data(symbol:str="BTC-USDT",
+                  time_period:str="1day",
+                  start_date:str="2018-01-01",
+                  end_date:str="2022-01-10",
+                 )
+
+plot_price(price_df)
+
+daily_growth_rate(price_df, closing_price)
+
+avg_daily_return(price_df)
+```
 
 ## Contributors
 
-We welcome and recognize all contributions. You can see a list of current contributors in the [`contributors tab`](https://github.com/UBC-MDS/CryptocurrencyEDA/graphs/contributors). If you are interested in contributing to this project, please check out our CONDUCT.md 
+We welcome and recognize all contributions. You can see a list of current contributors in the [`contributors tab`](https://github.com/UBC-MDS/CryptocurrencyEDA/graphs/contributors). If you are interested in contributing to this project, please check out our CONDUCT.md
 
 - Berkay Bulut
 - Cici Du
 - Alex Yinan Guo
 - Nobby Nguyen
+
 ## License
 
 `cryptocurrencyeda` was created by MDS Students from Group-11 for course 524. It is licensed under the terms of the MIT license.
