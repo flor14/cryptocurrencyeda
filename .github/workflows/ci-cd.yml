@@ -31,17 +31,10 @@ jobs:
     - name: Test with pytest
       run: poetry run pytest tests/
     # Step 7. Use Codecov to track coverage
-    - name: Upload coverage to Codecov
-    steps:
-    - uses: actions/checkout@master
     - uses: codecov/codecov-action@v2
       with:
-        token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-        files: ./coverage1.xml,./coverage2.xml # optional
-        flags: unittests # optional
-        name: codecov-umbrella # optional
-        fail_ci_if_error: true # optional (default = false)
-        verbose: true # optional (default = false)
+        #files: ./coverage.xml   # coverage report
+        fail_ci_if_error: true  # te
     # Step 8. Build documentation
     # - name: Build documentation
     #   run: poetry run make html --directory docs/
