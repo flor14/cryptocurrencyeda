@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.5 (2022-01-27)
+### Documentation
+* Update docs folder ([`09a0fdf`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/09a0fdfbd8bb3c9018609e8c2c0333c6c52f0f70))
+* Format README ([`d29f1bf`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/d29f1bfbf270448f46cc87c62dbeb9ca04ee5d42))
+* Update README ([`ac5f1c1`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/ac5f1c1feb8939fa1ec8ab4ad934374fe08ab0a5))
+
 ## v0.2.4 (2022-01-27)
 
 
