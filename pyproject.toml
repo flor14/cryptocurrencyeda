@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cryptocurrencyeda"
-version = "0.2.1"
+version = "0.2.2"
 description = "A package to analyze historical cryptocurrency prices and performance"
 authors = ["Berkay Bulut"]
 license = "MIT"
