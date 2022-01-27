@@ -24,7 +24,7 @@ $ pip install cryptocurrencyeda
 ```
 
 ## Usage
-```Python
+```python
 from cryptocurrency.retrieve_data import retrieve_data
 from cryptocurrency.plot_price import plot_price
 from cryptocurrency.avg_daily_return import avg_daily_return
