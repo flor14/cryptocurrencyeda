@@ -33,7 +33,7 @@ jobs:
     # Step 7. Use Codecov to track coverage
     - uses: codecov/codecov-action@v2
       with:
-        #files: ./coverage.xml   # coverage report
+        files: ./coverage.xml   # coverage report
         fail_ci_if_error: true  # te
     # Step 8. Build documentation
     # - name: Build documentation
