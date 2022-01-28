@@ -28,10 +28,9 @@ $ pip install git+https://github.com/UBC-MDS/cryptocurrencyeda
 ```
 
 ## Usage
-```Python
-
 In order to use the package, please follow these steps: 
 1. Create a new conda environment:
+
 ```
 conda create --name cryptocurrencyeda python=3.9 -y
 ```
