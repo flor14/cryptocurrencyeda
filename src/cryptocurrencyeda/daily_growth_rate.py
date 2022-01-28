@@ -33,7 +33,7 @@ def daily_growth_rate(df, col_name):
     # Test whether input col_name is of type numbers
     if df[col_name].dtype != np.float64:
         raise TypeError("input col_name must be of float type")
-    #df_output = df
+   
     df["daily_growth_rate(%)"] = df[col_name].pct_change()*100
         
     return  df

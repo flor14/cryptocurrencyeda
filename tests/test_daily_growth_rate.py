@@ -66,7 +66,7 @@ def test_daily_growth_rate_decreasing_price():
     expected = pd.DataFrame({
         'Date':['2022-01-15', '2022-01-16', '2022-01-17', '2022-01-18'],
         'Close':[100.00, 40.00, 10.00, 5.00],
-        'daily_growth_rate(%)':[np.nan, np.nan, -60.0, -75.0, -50.0]
+        'daily_growth_rate(%)':[np.nan, -60.0, -75.0, -50.0]
     }
     )
     assert_frame_equal(expected, result)
