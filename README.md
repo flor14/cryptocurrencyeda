@@ -21,26 +21,53 @@ The package contains the following four functions:
 
 ```bash
 $ pip install cryptocurrencyeda
+
+or 
+
+$ pip install git+https://github.com/UBC-MDS/cryptocurrencyeda
 ```
 
 ## Usage
-```Python
-from cryptocurrency.retrieve_data import retrieve_data
-from cryptocurrency.plot_price import plot_price
-from cryptocurrency.avg_daily_return import avg_daily_return
-from cryptocurrency.daily_growth_rate import daily_growth_rate
+In order to use the package, please follow these steps: 
+1. Create a new conda environment:
 
-retrieve_data(symbol:str="BTC-USDT",
+```
+conda create --name cryptocurrencyeda python=3.9 -y
+```
+2. Activate the environment:
+```
+conda activate cryptocurrencyeda
+```
+3. Install the package:
+```
+pip install cryptocurrencyeda
+or 
+pip install git+https://github.com/UBC-MDS/cryptocurrencyeda
+```
+4. Open Python:
+```
+Python
+```
+5. Import all functions:
+```
+>>> from cryptocurrencyeda.retrieve_data import retrieve_data
+>>> from cryptocurrencyeda.plot_price import plot_price
+>>> from cryptocurrencyeda.avg_daily_return import avg_daily_return
+>>> from cryptocurrencyeda.daily_growth_rate import daily_growth_rate
+```
+6. Use the functions: 
+```
+>>> retrieve_data(symbol:str="BTC-USDT",
                   time_period:str="1day",
                   start_date:str="2018-01-01",
                   end_date:str="2022-01-10",
                  )
 
-plot_price(price_df)
+>>> plot_price(price_df)
 
-daily_growth_rate(price_df, closing_price)
+>>> daily_growth_rate(price_df, "Close")
 
-avg_daily_return(price_df)
+>>> avg_daily_return(price_df)
 ```
 
 ## Contributors

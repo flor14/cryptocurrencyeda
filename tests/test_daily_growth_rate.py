@@ -11,10 +11,10 @@ def test_daily_growth_rate_df_not_dataframe():
     """
     Test to confirm TypeError is raised when input data is not a dataframe
     """
-    df = "Hello"
+    df = 'Hello'
     
     with raises(TypeError):
-        daily_growth_rate(df, "Hello")
+        daily_growth_rate(df, 'Hello')
 
 def test_daily_growth_rate_colname_not_str():
     """
@@ -30,9 +30,9 @@ def test_daily_growth_rate_colname_type_not_float():
     Test to confirm TypeError is raised when the type of input data is not float
     """
     data = {'Date':['2022-01-15', '2022-01-16', '2022-01-17', '2022-01-18'],
-        'Price':[20.11, 21.22, 19.13, 18.23]}
+            'Close':[20.11, 21.22, 19.13, 18.23]}
     df = pd.DataFrame(data)
-    col_name = "Date"
+    col_name = 'Date'
     
     with raises(TypeError):
         daily_growth_rate(df, col_name)
@@ -42,11 +42,16 @@ def test_daily_growth_rate_increasing_price():
     Test to confirm correct output when the price increases
     """
     data = {'Date':['2022-01-15', '2022-01-16', '2022-01-17', '2022-01-18'],
-        'Price':[5.00, 10.00, 40.00, 50.00]}
+            'Close':[5.00, 10.00, 40.00, 50.00]}
     df = pd.DataFrame(data)
-    col_name = "Price"
+    col_name = 'Close'
     result = daily_growth_rate(df, col_name)
-    expected = pd.DataFrame({"daily_growth_rate":[np.nan, 1.0, 3.0, 0.25]})
+    expected = pd.DataFrame({
+        'Date':['2022-01-15', '2022-01-16', '2022-01-17', '2022-01-18'],
+        'Close':[5.00, 10.00, 40.00, 50.00],
+        'daily_growth_rate(%)':[np.nan, 100.0, 300.0, 25.0]
+    }
+    )
     assert_frame_equal(expected, result)
 
 def test_daily_growth_rate_decreasing_price():
@@ -54,11 +59,16 @@ def test_daily_growth_rate_decreasing_price():
     Test to confirm correct output when the price decreases
     """
     data = {'Date':['2022-01-15', '2022-01-16', '2022-01-17', '2022-01-18'],
-        'Price':[100.00, 40.00, 10.00, 5.00]}
+            'Close':[100.00, 40.00, 10.00, 5.00]}
     df = pd.DataFrame(data)
-    col_name = "Price"
+    col_name = 'Close'
     result = daily_growth_rate(df, col_name)
-    expected = pd.DataFrame({"daily_growth_rate":[np.nan, -0.6, -0.75, -0.5]})
+    expected = pd.DataFrame({
+        'Date':['2022-01-15', '2022-01-16', '2022-01-17', '2022-01-18'],
+        'Close':[100.00, 40.00, 10.00, 5.00],
+        'daily_growth_rate(%)':[np.nan, -60.0, -75.0, -50.0]
+    }
+    )
     assert_frame_equal(expected, result)
 
 def test_daily_growth_rate_same_price():
@@ -66,9 +76,14 @@ def test_daily_growth_rate_same_price():
     Test to confirm correct output when the price does not change
     """
     data = {'Date':['2022-01-15', '2022-01-16', '2022-01-17', '2022-01-18'],
-        'Price':[50.00, 50.00, 50.00, 50.00]}
+            'Close':[50.00, 50.00, 50.00, 50.00]}
     df = pd.DataFrame(data)
-    col_name = "Price"
+    col_name = 'Close'
     result = daily_growth_rate(df, col_name)
-    expected = pd.DataFrame({"daily_growth_rate":[np.nan, 0.0, 0.0, 0.0]})
+    expected = pd.DataFrame({
+        'Date':['2022-01-15', '2022-01-16', '2022-01-17', '2022-01-18'],
+        'Close':[50.00, 50.00, 50.00, 50.00],
+        'daily_growth_rate(%)':[np.nan, 0.0, 0.0, 0.0]
+    }
+    )
     assert_frame_equal(expected, result)
