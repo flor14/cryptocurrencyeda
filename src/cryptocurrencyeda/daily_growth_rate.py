@@ -19,7 +19,7 @@ def daily_growth_rate(df, col_name):
 
     Examples
     -------
-    >>> daily_growth_rate(price_df, "Close")
+    >>> daily_growth_rate(price_df, 'Close')
                
     """
     # Test whether input data is of pd.DataFrame type
