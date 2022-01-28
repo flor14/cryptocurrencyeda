@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2022-01-28)
+### Feature
+* Update tests ([`ef0fe07`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/ef0fe076de70b5251e5862eb36e5960a8977af64))
+* Update function body ([`f437c15`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/f437c15e3ba88758d4cd137d3e7d84ff6daebc13))
+
+### Documentation
+* Update readme and func body ([`ddd0006`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/ddd00063a789c7fae242ba00067d1d140297b2c1))
+
 ## v0.2.7 (2022-01-28)
 
 
