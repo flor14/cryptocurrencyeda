@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.4 (2022-01-29)
+### Documentation
+* Update readme ([`cfa3be1`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/cfa3be17c00d5d5a8540a3cc148b844d92e9f29d))
+
 ## v0.3.3 (2022-01-29)
 
 
