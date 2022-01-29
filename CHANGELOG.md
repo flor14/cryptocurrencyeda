@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.1 (2022-01-29)
+
+
 ## v0.3.0 (2022-01-28)
 ### Feature
 * Update tests ([`ef0fe07`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/ef0fe076de70b5251e5862eb36e5960a8977af64))
