@@ -50,17 +50,17 @@ Python
 ```
 #### Use the functions: 
 ```
->>> retrieve_data(symbol:str="BTC-USDT",
-                  time_period:str="1day",
-                  start_date:str="2018-01-01",
-                  end_date:str="2022-01-10",
+>>> retrieve_data(symbol="BTC-USDT",
+                  time_period="1day",
+                  start_date="2018-01-01",
+                  end_date="2022-01-10",
                  )
 
 >>> plot_price(price_df)
 
 >>> daily_growth_rate(price_df, "Close")
 
->>> avg_daily_return(price_df)
+>>> avg_daily_return(price_df["Close"])
 ```
 
 ## Documentation
