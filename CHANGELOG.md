@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.5 (2022-01-29)
+### Documentation
+* Add dependencies jupyter ([`6f5b88b`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/6f5b88b02322ee12d2d770a62b51e6377a99a7b1))
+* Add example ([`bf94577`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/bf945772c07b7c46e499939429c5712128c0dd11))
+
 ## v0.3.4 (2022-01-29)
 ### Documentation
 * Update readme ([`cfa3be1`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/cfa3be17c00d5d5a8540a3cc148b844d92e9f29d))
