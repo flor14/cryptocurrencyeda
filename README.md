@@ -19,45 +19,36 @@ The package contains the following four functions:
 - `daily_growth_rate`: performs calculation of daily growth rate of the cryptocurrenty inputted over a period of time.
 
 - `avg_daily_return`: performs calculation of the average daily return of the inputted cryptocurrency price.
-## Installation
+## Installation and Usage
 
-```bash
-$ pip install cryptocurrencyeda
-
-or 
-
-$ pip install git+https://github.com/UBC-MDS/cryptocurrencyeda
-```
-
-## Usage
 In order to use the package, please follow these steps: 
-1. Create a new conda environment:
+### Create a new conda environment:
 
 ```
 conda create --name cryptocurrencyeda python=3.9 -y
 ```
-2. Activate the environment:
+### Activate the environment:
 ```
 conda activate cryptocurrencyeda
 ```
-3. Install the package:
+### Install the package:
 ```
 pip install cryptocurrencyeda
 or 
 pip install git+https://github.com/UBC-MDS/cryptocurrencyeda
 ```
-4. Open Python:
+### Open Python:
 ```
 Python
 ```
-5. Import all functions:
+### Import all functions:
 ```
 >>> from cryptocurrencyeda.retrieve_data import retrieve_data
 >>> from cryptocurrencyeda.plot_price import plot_price
 >>> from cryptocurrencyeda.avg_daily_return import avg_daily_return
 >>> from cryptocurrencyeda.daily_growth_rate import daily_growth_rate
 ```
-6. Use the functions: 
+### Use the functions: 
 ```
 >>> retrieve_data(symbol:str="BTC-USDT",
                   time_period:str="1day",
