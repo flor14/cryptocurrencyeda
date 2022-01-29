@@ -1,5 +1,8 @@
 # cryptocurrencyeda
 
+[![Workflow Status]
+(https://github.com/UBC-MDS/cryptocurrencyeda/workflows/main/badge.svg)](https://github.com/UBC-MDS/cryptocurrencyeda/actions)
+
 This is a Python package to analyze historical cryptocurrency prices and performance through simple exploratory data analysis including calculations and plotting. Data is sourced from the KuCoin API. There are four functions that are included in this python package which are described in more detail below. Cryptocurrency investors and enthusiasts can use this package to analyze cryptocurrencies of interest.
 
 
