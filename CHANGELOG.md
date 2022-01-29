@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.6 (2022-01-29)
+
+
 ## v0.3.5 (2022-01-29)
 ### Documentation
 * Add dependencies jupyter ([`6f5b88b`](https://github.com/UBC-MDS/cryptocurrencyeda/commit/6f5b88b02322ee12d2d770a62b51e6377a99a7b1))
